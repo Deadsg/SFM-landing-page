@@ -1,0 +1,68 @@
+body {
+    background-color: #000080; /* Navy Blue */
+    color: #FFD700; /* Gold */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #DC143C; /* Crimson */
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#connectWalletBtn {
+    background-color: #FFD700; /* Gold */
+    color: #000080; /* Navy Blue */
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Psychedelic animation */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #DC143C, #FFD700, #000080, #228B22);
+    background-size: 400% 400%;
+    animation: psychedelic-bg 15s ease infinite;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@keyframes psychedelic-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
